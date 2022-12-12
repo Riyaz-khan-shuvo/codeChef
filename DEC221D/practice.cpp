@@ -1,13 +1,19 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
+
 int main()
 {
-    string str;
-
-    cout << "Please enter your name: \n";
-    getline(cin, str);
-    cout << "Hello, " << str
-         << " welcome to GfG !\n";
-    cout << "String length is : " << str.length();
+    int T, S, X, Y, Z;
+    cin >> T;
+    while (T--)
+    {
+        cin >> S >> X >> Y >> Z;
+        if (S - X - Y >= Z)
+            cout << "0\n";
+        else if (S - X <= Z || S - Y >= Z)
+            cout << "1\n";
+        else
+            cout << "2\n";
+    }
     return 0;
 }
