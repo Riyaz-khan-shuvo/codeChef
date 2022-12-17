@@ -7,9 +7,9 @@ int main()
     while (t--)
     {
         scanf("%d %d %d", &a, &b, &c);
-        if (a >= b && a >= c)
+        if (a > b && a > c)
         {
-            if (b >= c)
+            if (b > c)
             {
                 d = b;
             }
@@ -18,9 +18,9 @@ int main()
                 d = c;
             }
         }
-        else if (b >= a && b >= c)
+        else if (b > a && b > c)
         {
-            if (a >= c)
+            if (a > c)
             {
                 d = a;
             }
@@ -29,13 +29,12 @@ int main()
                 d = c;
             }
         }
-        else if (a >= b)
+        else if (c > a && c > b)
         {
-            if (a < c)
+            if (a > b)
             {
                 d = a;
             }
-
             else
             {
                 d = b;
